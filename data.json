@@ -1,0 +1,14 @@
+{
+    "Detected Objects": [
+        {
+            "label": "car",
+            "score": 99.4,
+            "bounding_box": {
+                "x1": 13,
+                "y1": 2,
+                "x2": 763,
+                "y2": 527
+            }
+        }
+    ]
+}
