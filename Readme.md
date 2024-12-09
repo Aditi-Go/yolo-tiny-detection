@@ -35,6 +35,7 @@ yolo_object_detection/
 ├── main.py               # Standalone script for object detection
 ├── requirements.txt      # Python dependencies
 ├── Dockerfile            # Docker container setup
+├── docker-compose.yml   # Docker Compose configuration
 ├── samples/              # Sample input images (e.g., cats.jpg)
 ```
 
@@ -63,7 +64,18 @@ yolo_object_detection/
    ```
 5. Access the API at [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
-### B. Run with Docker
+### B. Run with Docker Compose
+1. Start the application using Docker Compose:
+   ```bash
+   docker-compose up -d
+   ```
+2. Access the API at [http://127.0.0.1:8000](http://127.0.0.1:8000).
+3. To stop the application:
+   ```bash
+   docker-compose down
+   ```
+
+### C. Run with Docker (Alternative)
 1. Build the Docker image:
    ```bash
    docker build -t object-detection-api .
